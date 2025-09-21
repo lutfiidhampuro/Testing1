@@ -21,7 +21,6 @@ namespace Testing1
         private void btnRegist_Click(object sender, EventArgs e)
         {
             var user = new user();
-            user.id = Convert.ToInt32(tbId.Text);
             user.email = tbEmail.Text;
             user.password = tbPassword.Text;
 
@@ -33,7 +32,6 @@ namespace Testing1
         private void getId()
         {
             int lastId = db.users.OrderByDescending(x => x.id).FirstOrDefault().id+1;
-            tbId.Text = lastId.ToString();
         }
 
         private void FormRegist_Load(object sender, EventArgs e)
