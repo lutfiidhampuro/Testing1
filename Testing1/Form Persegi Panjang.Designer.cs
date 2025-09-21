@@ -28,17 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Persegi_Panjang));
             this.btnBack = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tbWidht = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnCount = new System.Windows.Forms.Button();
             this.tbResult = new System.Windows.Forms.TextBox();
             this.tbLong = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tbWidht = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,7 +65,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.BackColor = System.Drawing.Color.Plum;
             this.panel1.Controls.Add(this.tbWidht);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.btnReset);
@@ -77,6 +78,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(436, 275);
             this.panel1.TabIndex = 3;
+            // 
+            // tbWidht
+            // 
+            this.tbWidht.Location = new System.Drawing.Point(203, 79);
+            this.tbWidht.Name = "tbWidht";
+            this.tbWidht.Size = new System.Drawing.Size(137, 26);
+            this.tbWidht.TabIndex = 9;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(66, 79);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 20);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Lebar";
             // 
             // btnReset
             // 
@@ -130,30 +147,16 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Panjang";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(66, 79);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 20);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Lebar";
-            // 
-            // tbWidht
-            // 
-            this.tbWidht.Location = new System.Drawing.Point(203, 79);
-            this.tbWidht.Name = "tbWidht";
-            this.tbWidht.Size = new System.Drawing.Size(137, 26);
-            this.tbWidht.TabIndex = 9;
-            // 
             // Form_Persegi_Panjang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.HotPink;
             this.ClientSize = new System.Drawing.Size(522, 698);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnBack);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_Persegi_Panjang";
             this.Text = "FormPersegiPanjang";
             this.panel1.ResumeLayout(false);

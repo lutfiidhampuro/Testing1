@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataIdham">
+  <DataContextMoniker Name="/DataIdhamDataContext" />
+  <nestedChildShapes>
+    <classShape Id="d737f691-f1fa-4c74-97ae-3756cbdc705b" absoluteBounds="2.625, 0.875, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DataIdhamDataContext/user" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f9d43969-95c2-44d3-9fac-e3a448c76137" absoluteBounds="2.6400000000000006, 1.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

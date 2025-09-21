@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSegitiga));
             this.btnBackSegitiga = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -64,7 +65,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.BackColor = System.Drawing.Color.Plum;
             this.panel1.Controls.Add(this.tbHeight);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.btnReset);
@@ -150,10 +151,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.HotPink;
             this.ClientSize = new System.Drawing.Size(531, 689);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnBackSegitiga);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormSegitiga";
             this.Text = "FormSegitiga";
             this.Load += new System.EventHandler(this.FormSegitiga_Load);

@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +47,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataIdham.cs">
+      <DependentUpon>DataIdham.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataIdham.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataIdham.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataStorage.cs" />
     <Compile Include="Form Persegi Panjang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,17 +68,35 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLingkaran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLingkaran.Designer.cs">
+      <DependentUpon>FormLingkaran.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPersegi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormPersegi.Designer.cs">
       <DependentUpon>FormPersegi.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormRegist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegist.Designer.cs">
+      <DependentUpon>FormRegist.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSegitiga.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormSegitiga.Designer.cs">
       <DependentUpon>FormSegitiga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Login.Designer.cs">
+      <DependentUpon>Form_Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,11 +106,20 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormLingkaran.resx">
+      <DependentUpon>FormLingkaran.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPersegi.resx">
       <DependentUpon>FormPersegi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormRegist.resx">
+      <DependentUpon>FormRegist.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSegitiga.resx">
       <DependentUpon>FormSegitiga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Login.resx">
+      <DependentUpon>Form_Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -93,6 +130,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="DataIdham.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataIdham.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataIdham.dbml.layout">
+      <DependentUpon>DataIdham.dbml</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -105,6 +150,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

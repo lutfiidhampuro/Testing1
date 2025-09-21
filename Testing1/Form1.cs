@@ -34,5 +34,16 @@ namespace Testing1
             new FormPersegi().Show();
             this.Hide();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLingkaran_Click(object sender, EventArgs e)
+        {
+            new FormLingkaran().Show();
+            this.Hide();
+        }
     }
 }
